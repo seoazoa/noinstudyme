@@ -1,31 +1,46 @@
 @charset "utf-8";
 
-a{
+a {
   text-decoration: none;
 }
-.section-title{
+.section-title {
   padding-bottom: 1.3%;
 }
 /* 사이드버튼 */
-.sidebtn{
+.sidebtn {
   width: 40%;
   height: 50%;
   position: fixed;
-  bottom:-10%;
-  left:93%;
+  bottom: -10%;
+  left: 93%;
 }
-.hangulbtn img{
+.hangulbtn img {
   width: 10%;
   height: 100%;
   cursor: pointer;
 }
-.topbtn{
+.topbtn {
   width: 100%;
   height: 100%;
 }
-.topbtn img{
+.topbtn img {
   width: 10%;
-  cursor: pointer;
+}
+.hangulbtn img {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* 부드러운 효과를 위한 transition 설정 */
+}
+.hangulbtn img:hover {
+  opacity: 0.7; /* 마우스를 올렸을 때의 투명도 */
+  transform: scale(1.05); /* 약간 확대되는 효과 */
+  cursor: pointer; /* 마우스 커서를 손가락 모양으로 변경 */
+}
+.topbtn img {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* 부드러운 효과를 위한 transition 설정 */
+}
+.topbtn img:hover {
+  opacity: 0.7; /* 마우스를 올렸을 때의 투명도 */
+  transform: scale(1.05); /* 약간 확대되는 효과 */
+  cursor: pointer; /* 마우스 커서를 손가락 모양으로 변경 */
 }
 /* shortcut */
 .shortcut {
@@ -59,7 +74,7 @@ a{
   width: 100%;
   cursor: pointer;
 }
-.shortcutbtn> li> .padding{
+.shortcutbtn > li > .padding {
   position: absolute;
   top: 75%;
   left: 0;
@@ -98,18 +113,18 @@ a{
   margin: 0 auto;
   padding: 45px 0;
 }
-.morebtn{
+.morebtn {
   display: flex;
   justify-content: flex-end;
-    align-items: center;
-    gap: 1%;
-    margin-bottom: 1.3%;
+  align-items: center;
+  gap: 1%;
+  margin-bottom: 1.3%;
 }
-.morebtn > img{
+.morebtn > img {
   width: 5%;
 }
 
-.recommendmore{
+.recommendmore {
   font-family: "Pretendard-Regular";
   font-size: 1.6rem;
   font-weight: bold;
@@ -127,10 +142,9 @@ a{
   height: 100%;
   min-height: 501px;
   border-radius: 30px;
-  box-shadow: 3px 3px 10px 0px #C3C3C3;
+  box-shadow: 3px 3px 10px 0px #c3c3c3;
 }
 .image-size {
-
   width: 100%; /* 기본 이미지 크기 */
   transition: width 0.3s ease; /* 크기 변화 효과 */
 }
@@ -139,7 +153,7 @@ a{
 .image-size:hover {
   width: 100%; /* 호버 시 이미지 크기 */
 }
-.gangbox{
+.gangbox {
   padding: 7%;
   cursor: pointer;
   /* background-color: aquamarine; */
@@ -147,48 +161,47 @@ a{
   max-height: 217px;
   overflow-y: auto;
   overflow-x: auto;
-  
 }
-.offline{
+.offline {
   font-family: "Pretendard";
   font-weight: bold;
   font-size: 1.2rem;
   color: #333;
-  background-color: #AAD9BB;
+  background-color: #aad9bb;
   border-radius: 20px;
   padding: 2% 3%;
 }
-.online{
+.online {
   font-family: "Pretendard";
   font-weight: bold;
   font-size: 1.2rem;
   color: #333;
-  background-color: #D5F0C1;
+  background-color: #d5f0c1;
   border-radius: 20px;
   padding: 2% 3%;
 }
-.subtit{
+.subtit {
   white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
 }
-.gangboxtit{
+.gangboxtit {
   font-family: "Pretendard";
   font-weight: 500;
   font-size: 1.1rem;
   color: #959595;
   padding-left: 2%;
 }
-.ksas{
+.ksas {
   font-size: 1.4rem;
   font-weight: bold;
   color: #242424;
   padding: 8% 0% 4% 0%;
 }
-.ksas2{
+.ksas2 {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 140%;
 }
-.card{
+.card {
   font-size: 1.2rem;
   margin-top: 1%;
   color: #c2c2c2;

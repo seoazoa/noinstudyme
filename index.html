@@ -211,7 +211,7 @@
         let currentFontSize = parseFloat($("html").css("font-size")); // 현재 html의 폰트 크기를 파싱
 
         $(".big").click(function () {
-          if (currentFontSize < 25) {
+          if (currentFontSize < 21) {
             currentFontSize++; // 폰트 크기를 1px 증가
           }
           $("html").css("font-size", currentFontSize + "px");
