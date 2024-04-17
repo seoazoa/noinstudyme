@@ -158,7 +158,7 @@ a {
   padding: 7%;
   cursor: pointer;
   /* background-color: aquamarine; */
-  min-width: 337px;
+  max-width: 346px;
   max-height: 217px;
   overflow-y: auto;
   overflow-x: auto;
